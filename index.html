@@ -54,12 +54,16 @@
       width: 400px; /* Ajuste o tamanho desejado */
     }
     .logoClass{
-      margin-top: 10px;
+      margin-top: 300px;
       margin-left: -200px;
     }
     .logoCentral{
       align-items: center;
     }
+    .mt-5 {
+      margin-top: -200px; /* Ajuste a margem superior conforme necessário */
+    }
+
   </style>
 </head>
 <body>
@@ -72,8 +76,6 @@
   </div>
 
   <div class="logoCentral">
-    <!-- Aplicando a classe para a logo -->
-    <!-- <img src="./img/logo.png" alt="Imagem" class="logo-img"> -->
     <img src="./img/logo.png" alt="Imagem" style="width: 600px;">
 
   </div>
@@ -81,10 +83,9 @@
     <img src="./img/img.png" alt="Imagem" width="500" >
   </div>  
 
-  <main class="position-absolute fixed-bottom w-100">
+  <main class="w-100">
     <section>
-      
-      <div class="container button-container">
+      <div class="container mt-5">
         <div class="row">
           <div class="col-md-4 mt-5">
             <a href="https://api.whatsapp.com/send/?phone=5545999571148&text=Oi%2C+tenho+interesse+em+uma+consulta.+Como+posso+fazer+para+agendar%3F+&type=phone_number&app_absent=0" class="btn btn-primary btn-block rounded-pill">CONTATO</a>
@@ -99,6 +100,8 @@
       </div>
     </section>
   </main>
+  
+  
 
   <footer>
     <!-- Rodapé da página -->
