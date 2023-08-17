@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #CBC18E;
+    }
+    
+    .btn-primary{  
+      background-color: #929777;
+      border-color: #929777;
+      width: 500px; /* Ajuste a largura dos botões */
+      height: 80px; /* Ajuste a altura dos botões */
+    }
+
+    .btn-primary:focus {
+      background-color: #929777;
+      border-color: #929777;
+      outline: none;
+    }
+    
+    .btn-primary:hover {
+      background-color: #929777;
+      border-color: #929777;
+    }
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* height: 100vh; */
+    }
+
+    .image-container img {
+      max-width: 50%;
+      max-height: 50%;
+      width: auto;
+      height: auto;
+    }
+
+    .first-image-container {
+      margin-top: 50px;
+    }
+
+    .button-container {
+      margin-bottom: 200px;
+    }
+
+    /* Ajuste a largura da logo */
+    .logo-img {
+      width: 400px; /* Ajuste o tamanho desejado */
+    }
+    .logoClass{
+      margin-top: 10px;
+      margin-left: -200px;
+    }
+    .logoCentral{
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Cabeçalho da página -->
+  </header>
+
+  <div class="image-container first-image-container">
+    <img src="./img/perfil.png" alt="Imagem" width="50">
+  </div>
+
+  <div class="logoCentral">
+    <!-- Aplicando a classe para a logo -->
+    <!-- <img src="./img/logo.png" alt="Imagem" class="logo-img"> -->
+    <img src="./img/logo.png" alt="Imagem" style="width: 600px;">
+
+  </div>
+  <div class="logoClass">
+    <img src="./img/img.png" alt="Imagem" width="500" >
+  </div>  
+
+  <main class="position-absolute fixed-bottom w-100">
+    <section>
+      
+      <div class="container button-container">
+        <div class="row">
+          <div class="col-md-4 mt-5">
+            <a href="https://api.whatsapp.com/send/?phone=5545999571148&text=Oi%2C+tenho+interesse+em+uma+consulta.+Como+posso+fazer+para+agendar%3F+&type=phone_number&app_absent=0" class="btn btn-primary btn-block rounded-pill">CONTATO</a>
+          </div>
+          <div class="col-md-4 mt-5">
+            <a href="https://api.whatsapp.com/send/?phone=5545999571148&text=Oi%2C+tenho+interesse+em+uma+consulta.+Como+posso+fazer+para+agendar%3F+&type=phone_number&app_absent=0" class="btn btn-primary btn-block rounded-pill">AGENDA</a>
+          </div>
+          <div class="col-md-4 mt-5">
+            <a href="https://www.instagram.com/dra.cannabismed/" class="btn btn-primary btn-block rounded-pill">INSTAGRAM</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Rodapé da página -->
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
