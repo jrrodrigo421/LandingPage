@@ -10,7 +10,7 @@
       background-color: #CBC18E;
     }
     
-    .btn-primary{  
+    .btn-primary {  
       background-color: #929777;
       border-color: #929777;
       width: 500px; /* Ajuste a largura dos botões */
@@ -31,7 +31,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      /* height: 100vh; */
     }
 
     .image-container img {
@@ -46,24 +45,30 @@
     }
 
     .button-container {
-      margin-bottom: 200px;
+      position: absolute;
+      top: 1000px; /* Ajuste a posição vertical conforme necessário */
+      left: 0;
+      right: 0;
+      text-align: center;
     }
 
     /* Ajuste a largura da logo */
     .logo-img {
-      width: 400px; /* Ajuste o tamanho desejado */
+      width: 600px; /* Ajuste o tamanho desejado */
     }
-    .logoClass{
-      margin-top: 300px;
+    .logoClass {
+      margin-top: 100px;
       margin-left: -200px;
     }
-    .logoCentral{
+    .logoCentral {
+      display: flex;
+      justify-content: center;
       align-items: center;
+      margin-top: 50px;
     }
     .mt-5 {
-      margin-top: -200px; /* Ajuste a margem superior conforme necessário */
+      margin-top: -200px;
     }
-
   </style>
 </head>
 <body>
@@ -76,33 +81,33 @@
   </div>
 
   <div class="logoCentral">
-    <img src="./img/logo.png" alt="Imagem" style="width: 600px;">
-
+    <img src="./img/logo.png" alt="Imagem" class="logo-img">
   </div>
+  
   <div class="logoClass">
-    <img src="./img/img.png" alt="Imagem" width="500" >
+    <img src="./img/img.png" alt="Imagem" width="500">
   </div>  
 
   <main class="w-100">
     <section>
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-md-4 mt-5">
-            <a href="https://api.whatsapp.com/send/?phone=5545999571148&text=Oi%2C+tenho+interesse+em+uma+consulta.+Como+posso+fazer+para+agendar%3F+&type=phone_number&app_absent=0" class="btn btn-primary btn-block rounded-pill">CONTATO</a>
-          </div>
-          <div class="col-md-4 mt-5">
-            <a href="https://api.whatsapp.com/send/?phone=5545999571148&text=Oi%2C+tenho+interesse+em+uma+consulta.+Como+posso+fazer+para+agendar%3F+&type=phone_number&app_absent=0" class="btn btn-primary btn-block rounded-pill">AGENDA</a>
-          </div>
-          <div class="col-md-4 mt-5">
-            <a href="https://www.instagram.com/dra.cannabismed/" class="btn btn-primary btn-block rounded-pill">INSTAGRAM</a>
+      <div class="container">
+        <div class="button-container">
+          <div class="row">
+            <div class="col-md-4">
+              <a href="https://api.whatsapp.com/send/?phone=5545999571148&text=Oi%2C+tenho+interesse+em+uma+consulta.+Como+posso+fazer+para+agendar%3F+&type=phone_number&app_absent=0" class="btn btn-primary btn-block rounded-pill">CONTATO</a>
+            </div>
+            <div class="col-md-4">
+              <a href="https://api.whatsapp.com/send/?phone=5545999571148&text=Oi%2C+tenho+interesse+em+uma+consulta.+Como+posso+fazer+para+agendar%3F+&type=phone_number&app_absent=0" class="btn btn-primary btn-block rounded-pill">AGENDA</a>
+            </div>
+            <div class="col-md-4">
+              <a href="https://www.instagram.com/dra.cannabismed/" class="btn btn-primary btn-block rounded-pill">INSTAGRAM</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
   
-  
-
   <footer>
     <!-- Rodapé da página -->
   </footer>
