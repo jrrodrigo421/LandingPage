@@ -26,6 +26,16 @@
       background-color: #929777;
       border-color: #929777;
     }
+    .btn-primary {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 250px;
+      height: 100px;
+      /* border-radius: 50%; */
+      border-bottom: 30px;
+      margin: 0 auto;
+    }
     .image-container {
       display: flex;
       justify-content: center;
@@ -33,24 +43,40 @@
       /* height: 100vh; */
     }
 
-    .image-container img {
+    /* .image-container img {
       max-width: 50%;
       max-height: 50%;
       width: auto;
       height: auto;
-    }
+    } */
 
     .first-image-container {
       margin-top: 50px;
+    }
+    .perfil-img{
+      width: 200px;
     }
 
     .button-container {
       margin-bottom: 30px;
     }
 
-    /* Ajuste a largura da logo */
-    .logo-img {
-      width: 400px; /* Ajuste o tamanho desejado */
+    .second-image-container {
+      padding-top: 1px;
+    }
+    .logo-img{
+      width: 400px;
+    }
+    .third-image-container{
+      padding-top: 1px;
+    }
+    .third-img{
+      width: 300px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
     }
   </style>
 </head>
@@ -59,44 +85,35 @@
     <!-- Cabeçalho da página -->
   </header>
 
-  <div class="image-container first-image-container">
-    <img src="./img/perfil.png" alt="Imagem" width="50">
-  </div>
-
-  <div class="image-container">
-    <!-- Aplicando a classe para a logo -->
-    <!-- <img src="./img/logo.png" alt="Imagem" class="logo-img"> -->
-    <img src="./img/logo.png" alt="Imagem" style="width: 400px;">
-
-  </div>
-
-  <main class="position-absolute fixed-bottom w-100">
-    <section>
-      <div class="image-container">
-        <img src="./img/img.png" alt="Imagem" width="800" >
-      </div>  
-      <div class="container button-container">
-        <div class="row">
-          <div class="col-md-4 mt-5">
-            <a href="https://api.whatsapp.com/send/?phone=5545999571148&text=Oi%2C+tenho+interesse+em+uma+consulta.+Como+posso+fazer+para+agendar%3F+&type=phone_number&app_absent=0" class="btn btn-primary btn-block rounded-pill">CONTATO</a>
-          </div>
-          <div class="col-md-4 mt-5">
-            <a href="https://api.whatsapp.com/send/?phone=5545999571148&text=Oi%2C+tenho+interesse+em+uma+consulta.+Como+posso+fazer+para+agendar%3F+&type=phone_number&app_absent=0" class="btn btn-primary btn-block rounded-pill">AGENDA</a>
-          </div>
-          <div class="col-md-4 mt-5">
-            <a href="https://www.instagram.com/dra.cannabismed/" class="btn btn-primary btn-block rounded-pill">INSTAGRAM</a>
-          </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="image-container first-image-container">
+          <img src="./img/perfil.png" alt="Imagem" class="perfil-img">
         </div>
       </div>
-    </section>
-  </main>
-
-  <footer>
-    <!-- Rodapé da página -->
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+      <div class="col-md-4">
+        <div class="image-container second-image-container ">
+          <img src="./img/logo.png" alt="Imagem" class="logo-img">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="image-container third-image-container">
+          <img src="./img/img.png" alt="Imagem" class="third-img" >
+        </div>  
+      </div>  
+    </div>
+    <div class="row">
+      <div class="col-md-4 mt-5">
+        <a href="https://api.whatsapp.com/send?phone=5511999999999&text=Olá, gostaria de saber mais sobre o seu produto." class="btn btn-primary">WhatsApp</a>
+      </div>
+      <div class="col-md-4 mt-5">
+        <a href="https://www.facebook.com/seusite" class="btn btn-primary">Facebook</a>
+      </div>
+      <div class="col-md-4 mt-5">
+        <a href="https://www.instagram.com/seusite" class="btn btn-primary">Instagram</a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
