@@ -1,120 +1,64 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
-  <style>
-    body {
-      background-color: #CBC18E;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    .btn-primary {
-      display: inline-block;
-      background-color: #929777;
-      border: none;
-      color: white;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      width: 250px;
-      height: 100px;
-      line-height: 100px;
-      margin: 20px;
-      cursor: pointer;
-    }
-
-    .btn-primary img {
-      vertical-align: middle;
-      margin-right: 10px;
-      width: 50px;
-      height: 50px;
-    }
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #CBC18E;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .button {
+    background-color: #FFFFFF;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .image {
+    margin: 10px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  @media (max-width: 600px) {
     .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    .row {
-      display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      flex-wrap: wrap; /* Adicionado para quebrar linha em telas menores */
     }
-
-    .image-container {
-      text-align: center;
-      margin-bottom: 10px; /* Adicionado para espaçamento entre as seções */
-    }
-
-    .first-image-container img{
-      width: 100%;
-      max-width: 300px; 
-      
-    }
-    .third-image-container img {
-      width: 100%;
-      /* max-width: 400px; */
-      margin-left: -300px;
-    }
-
-    .logo-img img {
-      width: 100%;
-      max-width: 600px;
-    }
-  </style>
+  }
+</style>
+<title>Landing Page Responsiva</title>
 </head>
 <body>
-  <header>
-    <!-- Cabeçalho da página -->
-  </header>
-
   <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="image-container first-image-container">     
-          <img src="./img/perfil.png" alt="Imagem" class="perfil-img">
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="image-container second-image-container logo-img">
-          <img src="./img/logo.png" alt="Imagem">
-        </div>
-      </div>
-      
-    </div>
-    <div class="row">
-      <div class="col-md-4">
-        <a href="https://api.whatsapp.com/send/?phone=5545999571148&text=Oi%2C+tenho+interesse+em+uma+consulta.+Como+posso+fazer+para+agendar%3F&type=phone_number&app_absent=0" class="btn-primary">
-          <img src="./img/whatsapp.png" alt="Imagem 1">
-          CONTATO
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="https://api.whatsapp.com/send/?phone=5545999571148&text=Oi%2C+tenho+interesse+em+uma+consulta.+Como+posso+fazer+para+agendar%3F&type=phone_number&app_absent=0" class="btn-primary">
-          <img src="./img/agenda.png" alt="Imagem 2">
-          AGENDA
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="https://www.instagram.com/dra.cannabismed/" class="btn-primary">
-          <img src="/img/instagram.png" alt="Imagem 3">
-          INSTAGRAM
-        </a>
-      </div>
-      <div class="col-md-4">
-        <div class="image-container third-image-container">
-          <img src="./img/img.png" alt="Imagem" class="third-img">
-        </div>
-      </div>
-    </div>
-    
+    <img class="image" src="./img/perfil.png" alt="Imagem 1" style="width: 360px; height: 380px;">
+    <img class="image" src="./img/logo.png" alt="Imagem 2" style="width: 650px; height: auto;">
+    <img class="image" src="./img/img.png" alt="Imagem 3" style="width: 320px; height: auto;">
+  </div>
+  <div class="container">
+    <button class="button">Botão 1</button>
+    <button class="button">Botão 2</button>
+    <button class="button">Botão 3</button>
   </div>
 </body>
 </html>
+
