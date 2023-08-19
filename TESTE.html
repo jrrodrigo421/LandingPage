@@ -16,6 +16,14 @@
     height: 100vh;
   }
   
+  .button-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+  }
+  
   .button {
     background-color: #FFFFFF;
     color: #333;
@@ -27,7 +35,6 @@
   }
   
   .image {
-    /* margin: 5px; */
     max-width: 100%;
     height: auto;
   }
@@ -37,25 +44,37 @@
     height: 240px;
     padding-top: 50px;
   }
+  
   .logo-image {
     width: 680px;
     height: auto;
   }
+  
   .img-image {
     width: 460px;
     height: auto;
+    position: relative;
+    margin-top: -30%; /* Move a imagem 30% para cima (corta 30% da parte superior) */
+    left: -30%; /* Move a imagem 5% para o lado esquerdo */
   }
+  
   .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
   }
   
   @media (max-width: 600px) {
     .container {
       flex-direction: column;
       align-items: center;
+    }
+    
+    .button-container {
+      display: flex;
+      top: 50%;
     }
   }
 </style>
@@ -65,13 +84,12 @@
   <div class="container">
     <img class="image perfil-image" src="./img/perfil.png" alt="Imagem 1">
     <img class="image logo-image" src="./img/logo.png" alt="Imagem 2">
-  </div>
-  <div class="container">
     <img class="image img-image" src="./img/img.png" alt="Imagem 3">
-    <button class="button">WHATSAPP</button>
-    <button class="button">AGENDA</button>
-    <button class="button">INSTAGRAM</button>
-    
+    <div class="button-container">
+      <button class="button">WHATSAPP</button>
+      <button class="button">AGENDA</button>
+      <button class="button">INSTAGRAM</button>
+    </div>
   </div>
 </body>
 </html>
