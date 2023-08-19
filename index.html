@@ -16,6 +16,14 @@
     height: 100vh;
   }
   
+  .button-container {
+    display: none; /* Inicialmente, não mostrar o contêiner de botões */
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+  }
+  
   .button {
     background-color: #FFFFFF;
     color: #333;
@@ -35,17 +43,18 @@
   .perfil-image {
     width: 240;
     height: 240px;
-    padding-top: 100px;
+    padding-top: 50px;
   }
-
+  
   .logo-image {
-    width: 650px;
+    width: 680px;
     height: auto;
   }
-
+  
   .img-image {
-    width: 320px;
+    width: 460px;
     height: auto;
+    position: relative; /* Permitir que o contêiner de botões fique sobreposto à imagem */
   }
   
   .container {
@@ -53,12 +62,19 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
   }
   
   @media (max-width: 600px) {
     .container {
       flex-direction: column;
       align-items: center;
+    }
+    
+    .button-container {
+      display: flex; /* Mostrar o contêiner de botões apenas em dispositivos móveis */
+      top: 50%; /* Centralizar verticalmente */
+      /* transform: translateY(-50%); */
     }
   }
 </style>
@@ -69,12 +85,11 @@
     <img class="image perfil-image" src="./img/perfil.png" alt="Imagem 1">
     <img class="image logo-image" src="./img/logo.png" alt="Imagem 2">
     <img class="image img-image" src="./img/img.png" alt="Imagem 3">
-  </div>
-  <div class="container">
-    <button class="button">Botão 1</button>
-    <button class="button">Botão 2</button>
-    <button class="button">Botão 3</button>
-    
+    <div class="button-container">
+      <button class="button">WHATSAPP</button>
+      <button class="button">AGENDA</button>
+      <button class="button">INSTAGRAM</button>
+    </div>
   </div>
 </body>
 </html>

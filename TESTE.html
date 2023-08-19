@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    padding: 10px;
+    background-color: #CBC18E;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .button {
+    background-color: #FFFFFF;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .image {
+    /* margin: 5px; */
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .perfil-image {
+    width: 240;
+    height: 240px;
+    padding-top: 50px;
+  }
+  .logo-image {
+    width: 680px;
+    height: auto;
+  }
+  .img-image {
+    width: 460px;
+    height: auto;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+<title>Landing Page</title>
+</head>
+<body>
+  <div class="container">
+    <img class="image perfil-image" src="./img/perfil.png" alt="Imagem 1">
+    <img class="image logo-image" src="./img/logo.png" alt="Imagem 2">
+  </div>
+  <div class="container">
+    <img class="image img-image" src="./img/img.png" alt="Imagem 3">
+    <button class="button">WHATSAPP</button>
+    <button class="button">AGENDA</button>
+    <button class="button">INSTAGRAM</button>
+    
+  </div>
+</body>
+</html>
