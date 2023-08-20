@@ -42,6 +42,8 @@
       border-bottom-right-radius: 10px;
       opacity: 0.8;
       font-size: large;
+      font-weight: bold;
+      -webkit-tap-highlight-color:#CBC18E;
     }
     
     .image {
@@ -87,7 +89,7 @@
       
       .button-container {
         display: flex; /* Mostrar o contêiner de botões apenas em dispositivos móveis */
-        top: 50%; /* Centralizar verticalmente */
+        top: 40%; /* Centralizar verticalmente */
         /* transform: translateY(-50%); */
       }
     }
@@ -100,11 +102,12 @@
       <img class="image logo-image" src="./img/logo.png" alt="Imagem 2">
       <img class="image img-image" src="./img/img.png" alt="Imagem 3">
       <div class="button-container">
-        <button class="button">WHATSAPP</button>
+        <button class="button" onclick="window.location.href = 'https://api.whatsapp.com/send/?phone=5545999571148&text=Oi%2C+tenho+interesse+em+uma+consulta.+Como+posso+fazer+para+agendar%3F+&type=phone_number&app_absent=0';">WHATSAPP</button>
+
         <br>
-        <button class="button">AGENDA</button>
+        <button class="button" onclick="window.location.href='https://api.whatsapp.com/send/?phone=5545999571148&text=Oi%2C+tenho+interesse+em+uma+consulta.+Como+posso+fazer+para+agendar%3F+&type=phone_number&app_absent=0'">AGENDA</button>
         <br>      
-        <button class="button">INSTAGRAM</button>
+        <button class="button" onclick="window.location.href='https://www.instagram.com/dra.cannabismed/'">INSTAGRAM</button>
         <br>
       </div>
     </div>
